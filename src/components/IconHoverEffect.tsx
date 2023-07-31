@@ -1,5 +1,5 @@
 import type {ReactNode} from "react"
-type IconHoverEffectprops ={
+interface IconHoverEffectprops {
     children: ReactNode
     red?:boolean
 }

@@ -2,7 +2,7 @@ import NewTweetForm from "~/components/NewTweetForm";
 import { api } from "~/utils/api";
 import InfiniteTweetsList from "~/components/InfiniteTweetsList"
 import { useSession } from "next-auth/react";
-import { NextPage } from "next";
+import type{ NextPage } from "next";
 import { useState } from "react";
 
 const Tabs = ["Explore", "Following"] as const

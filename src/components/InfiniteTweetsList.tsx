@@ -6,7 +6,7 @@ import { VscHeart, VscHeartFilled } from "react-icons/vsc";
 import IconHoverEffect from "./IconHoverEffect";
 import { api } from "~/utils/api";
 import LoadingSpinner from "./LoadingSpinner";
-type Tweet = {
+interface Tweet {
   id: string;
   content: string;
   createdAt: Date;
@@ -15,7 +15,7 @@ type Tweet = {
   user: { id: string; image: string | null; name: string | null };
 };
 
-type InfinteTweetsListProps = {
+interface InfinteTweetsListProps{
   isLoading: boolean;
   isError: boolean;
   hasMore: boolean;
@@ -138,7 +138,7 @@ function TweetCard({
   );
 }
 
-type HeartButtonProps = {
+interface HeartButtonProps  {
   onClick: () => void;
   isLoading: boolean;
   likedByMe: boolean;
